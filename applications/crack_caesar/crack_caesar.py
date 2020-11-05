@@ -93,3 +93,6 @@ def decode(text):
     return r
 
 print(f"DECODED TEXT: \n {decode(cipher)}")
+
+f = open("decode.txt", "w+")
+f.write(decode(cipher))
