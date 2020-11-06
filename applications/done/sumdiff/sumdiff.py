@@ -31,8 +31,6 @@ for i in range(0, len(q)):
 print(sums)
 print(diffs)
 
-equality = {}
-
 for i in sums:
     for j in diffs:
         if diffs[j] == sums[i]:
