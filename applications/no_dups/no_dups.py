@@ -1,6 +1,13 @@
 def no_dups(s):
     # Your code here
+    words = s.split()
+    unique = []
+    for word in words:
+        if (s.count(word)>1 and (word not in unique)or s.count(word)==1):
+            unique.append(word)
 
+
+    return " ".join(unique)
 
 
 if __name__ == "__main__":
