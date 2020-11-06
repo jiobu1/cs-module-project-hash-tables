@@ -13,12 +13,28 @@ def f(x):
 
 # Your code here
 
-function = dict()
+sums = {}
+diffs = {}
 
-for x in set(q):
-    for y in set(q)
-    function[x] = f(x)
+# for x in set(q):
+#     for y in set(q)
+#     function[x] = f(x)
 
-print(function)
+# print(function)
 
+
+for i in range(0, len(q)):
+    for j in range(0, len(q)):
+        sums[f'f({q[i]}) + f({q[j]})'] = f(q[i]) + f(q[j])
+        diffs[f'f({q[i]}) - f({q[j]})'] = f(q[i]) - f(q[j])
+
+print(sums)
+print(diffs)
+
+equality = {}
+
+for i in sums:
+    for j in diffs:
+        if diffs[j] == sums[i]:
+            print(f"{i} = {j} = {sums[i]}")
 
