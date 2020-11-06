@@ -13,3 +13,12 @@ def f(x):
 
 # Your code here
 
+function = dict()
+
+for x in set(q):
+    for y in set(q)
+    function[x] = f(x)
+
+print(function)
+
+
